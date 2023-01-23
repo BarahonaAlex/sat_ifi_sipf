@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: sat_ifi_sipf
+  cloud:
+    config:
+      failFast: false
+      uri: ${urlServerConfig:http://127.0.0.1}

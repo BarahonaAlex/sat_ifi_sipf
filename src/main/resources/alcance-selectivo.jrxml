@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Alcance" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bdff3858-46e9-407a-bb79-bbb49b1901ed">
+    <queryString>
+		<![CDATA[]]>
+    </queryString>
+    <field name="contribuyente" class="java.lang.String"/>
+    <field name="nit" class="java.lang.String"/>
+    <field name="periodos" class="java.lang.String"/>
+    <field name="impuestos" class="java.lang.String"/>
+    <field name="programa" class="java.lang.String"/>
+    <field name="antecedentes" class="java.lang.String"/>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="79" splitType="Stretch">
+            <image onErrorType="Icon">
+                <reportElement x="-11" y="10" width="170" height="62" uuid="cd406d42-71b3-4c40-a4af-85d2a6852ee6"/>
+                <imageExpression><![CDATA["logo-sat.png"]]></imageExpression>
+            </image>
+            <staticText>
+                <reportElement x="230" y="24" width="100" height="30" uuid="3f769f96-2ef2-458e-a715-989b67fb4c41"/>
+                <text><![CDATA[Alcance del Examen]]></text>
+            </staticText>
+        </band>
+    </title>
+    <pageHeader>
+        <band height="123" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="21" width="80" height="20" uuid="c08ce58c-c1b9-4533-b7d8-ec039bce39f6"/>
+                <text><![CDATA[Contribuyente:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="80" y="21" width="490" height="20" uuid="9df58771-8362-4dba-8870-b0e6b1fa2e32"/>
+                <textFieldExpression><![CDATA[$F{contribuyente}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="41" width="80" height="20" uuid="9d0ea06b-29d0-4ce8-b30e-e69cef285613"/>
+                <text><![CDATA[NIT:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="80" y="41" width="490" height="20" uuid="04c80d4d-3f14-4093-ab40-deea8dd6d75c"/>
+                <textFieldExpression><![CDATA[$F{nit}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="0" y="61" width="80" height="20" uuid="6b42e8c0-87b6-41bc-b63a-ea4b52f8efbd"/>
+                <text><![CDATA[Períodos:]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="81" width="80" height="20" uuid="2c51cf47-12c1-45ec-adfd-1aeadc773428"/>
+                <text><![CDATA[Impuestos:]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="101" width="80" height="20" uuid="1ecf8281-04cd-48a2-bb07-8b1c9f6f8c50"/>
+                <text><![CDATA[Programa:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="80" y="61" width="490" height="20" uuid="dc4d7131-bbf8-474c-a540-eec5f4219165"/>
+                <textFieldExpression><![CDATA[$F{periodos}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="80" y="81" width="490" height="20" uuid="888c4f33-b1d3-4c6f-90c3-5cc0f3802b2f"/>
+                <textFieldExpression><![CDATA[$F{impuestos}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="80" y="101" width="490" height="20" uuid="ac8079cc-e052-46bc-b57f-f9939f8e5e21"/>
+                <textFieldExpression><![CDATA[$F{programa}]]></textFieldExpression>
+            </textField>
+        </band>
+    </pageHeader>
+    <columnHeader>
+        <band height="61" splitType="Stretch"/>
+    </columnHeader>
+    <detail>
+        <band height="125" splitType="Stretch">
+            <staticText>
+                <reportElement x="30" y="0" width="100" height="20" uuid="d25d1996-86c9-4a13-adb5-f945030be558"/>
+                <text><![CDATA[Antecedentes]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="30" y="20" width="510" height="20" uuid="bdfcfe37-807a-4c6f-976c-9a3f4242ef90"/>
+                <textFieldExpression><![CDATA[$F{antecedentes}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <columnFooter>
+        <band height="45" splitType="Stretch"/>
+    </columnFooter>
+    <pageFooter>
+        <band height="54" splitType="Stretch"/>
+    </pageFooter>
+    <summary>
+        <band height="42" splitType="Stretch"/>
+    </summary>
+</jasperReport>

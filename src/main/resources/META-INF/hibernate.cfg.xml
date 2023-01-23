@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!--
+~ Hibernate, Relational Persistence for Idiomatic Java
+~
+~ License: GNU Lesser General Public License (LGPL), version 2.1 or later.
+~ See the lgpl.txt file in the root directory or <http://www.gnu.org/licenses/lgpl-2.1.html>.
+-->
+<hibernate-configuration>
+    <session-factory>
+        <!--
+        Las etiquetas property solo se deben de utilizar para cuando se
+        quieren generar los POJO por medio del plugin de hibernate, despues
+        de haber generado los POJO se deben de quitar y dejar solamente las
+        etiquetas mapping.
+        -->
+        <!-- Database connection settings -->
+        <!--
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://replica-bd-desa-pre.caibljdxtofj.us-east-1.rds.amazonaws.com:5432/dbdesa</property>
+        <property name="connection.username">usuario_arquetipo</property>
+        <property name="connection.password">desa123$</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQL94Dialect</property>
+        -->
+    <property name="connection.driver_class">org.postgresql.Driver</property>
+    <property name="connection.url">jdbc:postgresql://aepn09gin0072:5432/postgres</property>
+    <property name="connection.username">postgres</property>
+    <property name="connection.password">root</property>
+    <property name="dialect">org.hibernate.dialect.PostgreSQL94Dialect</property>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfCasos"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfProgramaFiscales"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfAsignacionCasosId"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfImpuestoPrograma"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfHistorialComentarios"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfColaborador"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfGrupoTrabajo"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfUnidadAdministrativa"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfAsignacionCasos"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfHistoricoOperaciones"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfCatCatalogo"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfPuestoTrabajo"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfCasosDependencias"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfAlcancesMasivos"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfAlcancesMasivosVersiones"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfIntegranteGrupo"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfIntegranteGrupoId"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfCasosMasivos"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfImpuestoProgramaId"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfAlcancesMasivosVersionesId"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfHallazgosEncontrados"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfCatDato"/>
+    <mapping class="gt.gob.sat.sat_ifi_sipf.models.SipfSeccionesCaso"/>
+  </session-factory>
+</hibernate-configuration>
